@@ -5,9 +5,11 @@ namespace App\Http\Module\Product\Application\Services\CreateProduct;
 class CreateProductRequest
 {
     public function __construct(
-        public string $nama,
-        public float $price,
-        public string $description,
+        public string $email,
+        public string $password,
+        public string $name,
+        public float $float,
+        public string $image
     )
     {
     }

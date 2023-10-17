@@ -2,20 +2,20 @@
 
 namespace App\Http\Module\Product\Application\Services\CreateProduct;
 
-use App\Http\Module\Product\Domain\Model\Product;
-use App\Http\Module\Product\Infrastructure\Repository\ProductRepository;
+use App\Http\Module\Product\Domain\Model\Form;
+use App\Http\Module\Product\Infrastructure\Repository\FormRepository;
 
-class CreateProductService
+class CreateFormService
 {
 
     public function __construct(
-        private ProductRepository $product_repository
+        private FormRepository $product_repository
     )
     {
     }
 
-    public function execute(CreateProductRequest $request){
-        $product = new Product(
+    public function execute(CreateFormRequest $request){
+        $product = new Form(
             $request->nama,
             $request->price,
             $request->description,

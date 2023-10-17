@@ -16,9 +16,11 @@ class Product
      * @param string $description
      */
     public function __construct(
-        public string $nama,
-        public float $price,
-        public string $description,
+        public string $email,
+        public string $password,
+        public string $name,
+        public float $float,
+        public string $image
     )
     {
     }
